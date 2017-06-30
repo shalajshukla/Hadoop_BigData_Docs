@@ -1,0 +1,19 @@
+For Twitter: 
+
+1. visit : https://apps.twitter.com/
+2. Click on Create app
+3. You will be asked following details to be filled:
+Application Details
+1. Name : 
+2. Description :
+3. Website :
+4. Callback URL
+
+For more details refer:
+https://themepacific.com/how-to-generate-api-key-consumer-token-access-key-for-twitter-oauth/994/
+
+
+For Facebook:
+https://developers.facebook.com/docs/marketing-api/access
+
+1. Under MyApp dropdown section on extreme right click "Create new App"

@@ -1,0 +1,54 @@
+
+1. Code details:
+	Config file : config.py
+		1. Social Media popularity analytics:
+		  a. Access related credentials ---  please don't modify those fields
+		  b. pageids - Facebook page_ids for which we want to get popularity (Fan count)
+		  c. users -  Twitter users for whom we will calculate popularity (Followers count)
+		  d. Kibananames - Respective display names of Facebook and Twitter users for Kibana dashboards.
+
+		Note: For every entry in users list or pageids list add respective entry in Kibananames list
+
+		2. Twitter sentiment analysis:
+		  a. Access related credentials --- please don't modify those fields
+		  b. keywords - keyowrds for which sentiments analysis will be done e.g. olympics, usainbolt etc
+		  
+	Twitter sentiment analysis : twitter_sentiment.py
+		1. This will calculate sentiments for keywords mentioned config.py file
+		
+	Popularity analytics : social_media_popularity_analytics.py
+		1. This will calculate popularity of users in terms of 
+		   Fan count of Facebook and Follower count of Twitter	
+		
+2. Lab machines :
+    Installation is done on following machine :
+	a. Elasticsearch : 172.27.155.60, 172.27.155.97, 172.27.155.108  --- This is running as daemon process
+	b. Kibana : 172.27.155.108 (kibana installed under /home/kibana/kibana-4.5.0-linux-x64/bin)
+	c. Tweepy (Library for sentiment analysis used by Python code): 172.27.155.108
+	
+3. Steps to Run:
+	a. Twitter sentiment analytics:
+	   1. On Machine 172.27.155.108, start Kibana (issue command ./kibana under bin direcotry of kibana)
+			open url http://172.27.155.108:5601
+	   2. Navigate to path : /home/tweepy/tweepy-2.3.0
+	   3. Run python script from above path : python twitter_sentiment.py
+	   
+	Note : Once started this will keep on collecting twitter data till explicitly stopped   
+   
+	b. Social network popularity analytics:
+	   1. On Machine 172.27.155.108, start Kibana
+	   2. Navigate to path : /home/tweepy/tweepy-2.3.0
+	   3. Run python script from above path : python social_media_popularity_analytics.py
+	   
+	Note : This is one time collection of stats, for running it in continouds mode
+		   I have cronned the job in : /etc/crontab on machine : 172.27.155.108
+		   
+	   
+4. Kibana Dashboard:	   
+To access Twitter sentiments dashboard:
+http://172.27.155.108:5601/app/kibana#/dashboard/twitter_dashboard?_g=(refreshInterval:(display:'5%20seconds',pause:!f,section:1,value:5000),time:(from:now-24h,mode:quick,to:now))&_a=(filters:!(),options:(darkTheme:!t),panels:!((col:1,id:twitter_logs_count_per_year,panelIndex:2,row:3,size_x:12,size_y:2,type:visualization),(col:7,id:twitter_logs_sentiment_count,panelIndex:3,row:8,size_x:6,size_y:3,type:visualization),(col:7,id:twitter_logs_counts_per_location,panelIndex:4,row:5,size_x:6,size_y:3,type:visualization),(col:1,id:twitter_logs_count,panelIndex:5,row:1,size_x:12,size_y:2,type:visualization),(col:1,id:twitter_logs_count_location,panelIndex:6,row:5,size_x:6,size_y:3,type:visualization),(col:1,id:twitter_logs_count_per_location_per_sentiment,panelIndex:7,row:8,size_x:6,size_y:3,type:visualization),(col:1,id:Sentiments_USA_BasketBall_Team,panelIndex:8,row:15,size_x:6,size_y:2,type:visualization),(col:1,id:twitter_logs_count_per_location_per_sentiment,panelIndex:9,row:11,size_x:6,size_y:4,type:visualization),(col:7,id:twitter_logs_count_per_location_per_sentiment,panelIndex:10,row:11,size_x:6,size_y:4,type:visualization),(col:7,id:sentiments_AUS_basketballteam,panelIndex:11,row:15,size_x:6,size_y:2,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:twitter_dashboard,uiState:(P-3:(vis:(colors:(negative:%23890F02,neutral:%23E5AC0E,positive:%233F6833))),P-7:(vis:(colors:(negative:%23890F02,neutral:%23CCA300,positive:%233F6833)))))
+
+To access Social network popularity dashboard:
+http://172.27.155.108:5601/app/kibana#/dashboard/social_media_popularity_dashboard?_g=(refreshInterval:(display:'5%20seconds',pause:!f,section:1,value:5000),time:(from:now%2Fd,mode:quick,to:now%2Fd))&_a=(filters:!(),options:(darkTheme:!t),panels:!((col:1,id:facebook_fan_count_per_player,panelIndex:1,row:4,size_x:12,size_y:3,type:visualization),(col:1,id:twitter_follower_count,panelIndex:2,row:7,size_x:12,size_y:3,type:visualization),(col:7,id:usain_bolt_fb_and_twitter_counts,panelIndex:3,row:10,size_x:6,size_y:2,type:visualization),(col:1,id:Yelena_Isinbaeva_fb_and_twitter_count,panelIndex:4,row:10,size_x:6,size_y:2,type:visualization),(col:1,id:social_media_popularity_details,panelIndex:5,row:12,size_x:12,size_y:4,type:visualization),(col:1,id:popularity_count_fb_first_twitter_second_bar,panelIndex:6,row:1,size_x:12,size_y:3,type:visualization),(col:1,id:Olympics_basket_ball_teams_USA_VS_AUS,panelIndex:7,row:16,size_x:12,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:social_media_popularity_dashboard,uiState:(P-1:(vis:(legendOpen:!t)),P-3:(vis:(colors:('17419919':%23447EBC,'17430231':%23447EBC,'4038964':%23508642,'4041663':%233F6833),legendOpen:!t)),P-4:(spy:(mode:(fill:!f,name:!n)))))
+
+
