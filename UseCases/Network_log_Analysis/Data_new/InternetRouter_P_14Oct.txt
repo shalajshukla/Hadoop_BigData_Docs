@@ -1,0 +1,5 @@
+2016-10-14T13:22:47+05:30 121.242.35.1 2168: .Oct 14 2016 13:22:53 IST: %SYS-5-CONFIG_I: Configured from console by kamleshga on vty0 (121.242.40.20)
+2016-10-14T18:05:37+05:30 121.242.35.1 2169: .Oct 14 2016 18:05:44 IST: %SYS-5-CONFIG_I: Configured from console by pranaysha on vty0 (121.242.40.20)
+2016-10-14T18:08:45+05:30 121.242.35.1 2170: .Oct 14 2016 18:08:52 IST: %SYS-5-CONFIG_I: Configured from console by amoln on vty0 (121.242.40.20)
+2016-10-14T18:14:06+05:30 121.242.35.1 2171: .Oct 14 2016 18:14:13 IST: %SYS-5-CONFIG_I: Configured from console by amoln on vty0 (121.242.40.20)
+2016-10-14T18:19:12+05:30 121.242.35.1 2172: .Oct 14 2016 18:19:18 IST: %SYS-5-CONFIG_I: Configured from console by amoln on vty0 (121.242.40.20)
