@@ -1,0 +1,3 @@
+Apr 11 00:00:00 10.1.253.9 %ASA-2-106001: Inbound TCP connection denied from 80.243.189.75/50293 to 121.242.35.23/8080 flags SYN  on interface OUTSIDE
+Apr 11 00:00:00 10.1.253.9 %ASA-3-713902: Group = 199.167.217.10, IP = 199.167.217.10, Removing peer from correlator table failed, no match!
+Apr 11 00:00:00 10.1.253.9 %ASA-4-113019: Group = 199.167.217.10, Username = 199.167.217.10, IP = 199.167.217.10, Session disconnected. Session Type: IKE, Duration: 0h:00m:00s, Bytes xmt: 0, Bytes rcv: 0, Reason: User Requested

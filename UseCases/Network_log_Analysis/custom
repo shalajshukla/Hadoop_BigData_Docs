@@ -1,0 +1,6 @@
+#custom
+#CISCOTIMESTAMP %{MONTH} +%{MONTHDAY}(?: %{YEAR})? %{TIME}(?: %{WORD})?
+CISCOTIMESTAMP %{MONTH} +%{MONTHDAY}(?: %{YEAR})? %{TIME}
+SPECIAL_CHAR [~,@,#,$,\^,&,*,\(,\),-,_,+,=,[,],{,},|,\,,\.\?:]?
+SEVERITY [0,1,2,3,4,5,6,7]
+MNEMONIC [A-Z0-9]+[^:]

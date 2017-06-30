@@ -1,0 +1,11 @@
+Jul  1 11:07:22 10.1.254.90 4355: Jul  1 11:09:02 IST: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/14, changed state to up
+Jul  1 11:07:40 10.1.254.90 4356: Jul  1 11:09:21 IST: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/14, changed state to down
+Jul  1 11:07:46 10.1.254.90 4357: Jul  1 11:09:27 IST: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/14, changed state to up
+Jul  1 11:58:04 10.1.254.90 4358: Jul  1 11:59:45 IST: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/10, changed state to down
+Jul  1 11:58:06 10.1.254.90 4359: Jul  1 11:59:47 IST: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/10, changed state to up
+Jul  1 12:02:40 10.1.254.90 4360: Jul  1 12:04:21 IST: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/10, changed state to down
+Jul  1 12:02:40 10.1.254.90 4360: Jul  1 12:04:21 IST: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/10, changed state to down
+Jul  1 12:02:42 10.1.254.90 4361: Jul  1 12:04:23 IST: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/10, changed state to up
+Jul  1 17:25:05 10.1.254.90 4362: Jul  1 17:26:47 IST: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/10, changed state to down
+Jul  1 18:18:57 10.1.254.90 4363: Jul  1 18:20:38 IST: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/10, changed state to up
+Jul  1 19:45:26 10.1.254.90 4364: Jul  1 19:47:08 IST: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/14, changed state to down

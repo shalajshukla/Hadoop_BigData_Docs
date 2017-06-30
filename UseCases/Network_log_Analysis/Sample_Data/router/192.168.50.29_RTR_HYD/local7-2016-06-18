@@ -1,0 +1,4 @@
+Jun 18 12:27:28 192.168.50.29 69: *Jun 18 2016 12:29:01.748 IST: %DUAL-5-NBRCHANGE: EIGRP-IPv4 100: Neighbor 192.168.50.34 (GigabitEthernet2/48) is up: new adjacency
+Jun 18 12:27:28 192.168.50.29 69: *Jun 18 2016 12:29:01.748 IST: %DUAL-5-NBRCHANGE: EIGRP-IPv4 100: Neighbor 192.168.50.34 (GigabitEthernet2/48) is up: new adjacency
+Jun 18 12:27:28 192.168.50.29 69: *Jun 18 2016 12:29:01.748 IST: %DUAL-5-NBRCHANGE: EIGRP-IPv4 100: Neighbor 192.168.50.34 (GigabitEthernet2/48) is up: new adjacency
+Jun 18 12:27:28 192.168.50.29 69: *Jun 18 2016 12:29:01.748 IST: %DUAL-5-NBRCHANGE: EIGRP-IPv4 100: Neighbor 192.168.50.34 (GigabitEthernet2/48) is up: new adjacency
